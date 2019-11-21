@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="" id="eventAudio"></audio>
+    <button id="click" onclick="click()"></button>
+
+    <p style="font-size: 12px">字体大胸</p>
+    <p style="font-size: 10px">字体大胸2</p>
+
+    <input type="date">
+</body>
+<!-- <script src="./audio.js"></script> -->
+<script>
+    var btn1 = document.getElementById('click');
+    btn1.onclick = click;
+    function click() {
+        click2()
+    }
+    function click2() {
+        const buttonAudio = document.getElementById('eventAudio')
+        buttonAudio.setAttribute('src', '../assets/alert.mp3')
+        buttonAudio.play()
+    }
+</script>
+</html>
